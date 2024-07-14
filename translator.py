@@ -23,12 +23,12 @@ def translate_xml(input_path, output_path):
     messagebox.showinfo("Success", "Translation completed and saved to " + output_path)
 
 def open_file_dialog(label):
-    filename = filedialog.askopenfilename(filetypes=(("Kuriimu1's XML", "*.kup"), ("All files", "*.*")))
+    filename = filedialog.askopenfilename(filetypes=(("Kuriimu1's XML", "*.cfg.bin.kup"), ("All files", "*.*")))
     label.config(text=filename)
     return filename
 
 def save_file_dialog(label):
-    filename = filedialog.asksaveasfilename(filetypes=(("Kuriimu1's XML", "*.kup"), ("All files", "*.*")))
+    filename = filedialog.asksaveasfilename(filetypes=(("Kuriimu1's XML", "*.cfg.bin.kup"), ("All files", "*.*")))
     label.config(text=filename)
     return filename
 
